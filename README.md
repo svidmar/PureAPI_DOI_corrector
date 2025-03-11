@@ -1,4 +1,4 @@
-# DOI Corrector
+# Elsevier Pure DOI Corrector
 
 ## Overview
 
