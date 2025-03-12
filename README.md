@@ -2,7 +2,7 @@
 
 ## Overview
 
-This script processes a list of UUIDs from an Excel file, fetches research outputs from the **Pure API**, extracts and cleans DOI values, and updates them back to the API. It ensures that DOIs are correctly formatted by removing unwanted prefixes and validating the structure.
+This script processes a list of UUIDs from an Excel file, fetches research outputs from the **Pure API**, extracts and cleans DOI values, and sends them back to the API. It ensures that DOIs are correctly formatted by removing unwanted prefixes and validating the structure.
 
 ## Features
 
@@ -23,7 +23,7 @@ This script processes a list of UUIDs from an Excel file, fetches research outpu
   pip install requests pandas tqdm openpyxl
   ```
 - API key with **read and write** access to the Pure API.
-- Excel file containing UUIDs with a column named `UUID`.
+- Excel file containing UUIDs with a column named `UUID`. Can be easily generated using the reporting module in Pure.
 
 ## Usage
 
@@ -71,8 +71,7 @@ python doicorrector.py
 ## Customization
 
 - **Change the delay:** Modify `time.sleep(1)` if the API allows faster/slower requests.
-- **Add error handling:** Extend error logging for different API failures.
-- **Export results:** Modify the script to save changes in an output file.
+
 
 ## License
 
